@@ -92,7 +92,8 @@ isEdge   (Game {fieldWidth, fieldHeight}) (i,j) |  i == 0 || i == fieldWidth-1  
                                                 | otherwise                                                       = False
 isCorner (Game {fieldWidth, fieldHeight}) (i,j) | (i == 0 || i == fieldWidth-1) && (j == 0 || j == fieldHeight-1) = True
                                                 | otherwise                                                       = False
---0, AlterierCaveDark, Dark, Dark2
+
+--0, AlterierCaveDark, Dark, Dark2, DimRed, DimGrey, DimGreens, DimGreen
 
 analysis :: (ChainReaction c) => c -> [c]
 analysis game = case whoIsWinner game of 
